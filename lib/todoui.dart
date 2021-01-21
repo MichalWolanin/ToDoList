@@ -25,7 +25,7 @@ class _todouiState extends State<todoui> {
               children: <Widget>[
                 RaisedButton(  
                   onPressed: (){},
-                  color: Colors.green,
+                  color: Colors.red,
                   child: Text(
                     "Dodaj",
                   ),
