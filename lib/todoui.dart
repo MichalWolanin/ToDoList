@@ -20,18 +20,39 @@ class _todouiState extends State<todoui> {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            TextField(),
-            Column(
-              children: <Widget>[
-                RaisedButton(  
-                  onPressed: (){},
-                  color: Colors.green,
-                  child: Text(
-                    "Dodaj",
+            TextField(
+              onChanged: (text){
+                print(text);
+              },
+              autofocus: true,
+              style: TextStyle(
+                fontSize: 18.0,
+                fontFamily: "Raleway", 
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(
+                top: 10.0
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  RaisedButton(
+                    onPressed: (){
+
+                    },
+                        color: Colors.green,
+                    child: Text(
+                      "Dodaj :)",
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        fontFamily: "Raleway", 
+                      ),
+                    ),
                   ),
-                ),
-              ],
-            )
+                ],
+              ),
+            ),
           ],
         ),
       ),
