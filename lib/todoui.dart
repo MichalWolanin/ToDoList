@@ -43,7 +43,7 @@ class _todouiState extends State<todoui> {
                     },
                         color: Colors.green,
                     child: Text(
-                      "Dodaj",
+                      "Dodaj :)",
                       style: TextStyle(
                         fontSize: 18.0,
                         fontFamily: "Raleway", 
